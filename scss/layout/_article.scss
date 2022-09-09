@@ -1,0 +1,106 @@
+.article {
+  background-color: $color-background;
+  padding: 1.8rem 1.2rem;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+  @include respond-to(medium) {
+    align-items: center;
+  }
+  &__container {
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 550px;
+    @include respond-to(medium) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+}
+.imgContainer {
+  background-color: $color-neutral;
+  &__img {
+    height: 100%;
+  }
+  @include respond-to(medium) {
+    width: 50%;
+  }
+}
+.section {
+  background-color: $color-neutral;
+  display: flex;
+  flex-direction: column;
+  color: $color-font-light;
+  padding: 1.4rem;
+  @include respond-to(medium) {
+    width: 50%;
+    padding: 2rem;
+  }
+  &__type {
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    font-size: .7rem;
+  }
+  &__title {
+    font-family: $font-family-title;
+    color: $color-font-dark;
+    font-size: 1.9rem;
+    padding: 1.2rem 0;
+    @include respond-to(medium) {
+      line-height: 1.8rem;
+      padding: 1.2rem 2rem 1rem 0rem;
+    }
+  }
+  &__text {
+    line-height: 1.4rem;
+    padding-bottom: 1.8rem;
+    @include respond-to(medium) {
+      line-height: 1.3rem;
+      padding-bottom: 1.6rem;
+    }
+  }
+  &__prices {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding-bottom: 1.2rem;
+    @include respond-to(medium) {
+      padding-bottom: 1.8rem;
+    }
+    &--goodPrice {
+      font-family: $font-family-title;
+      color: $color-primary;
+      font-size: 2rem;
+    }
+    &--wrongPrice {
+      text-decoration: line-through;
+      font-size: .8rem;
+    }
+  }
+  &__button {
+    border: none;
+    background-color: $color-primary;
+    color: $color-neutral;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    padding: 1rem 0;
+    transition: background-color 200ms ease-in-out;
+    &:hover, &:focus {
+      background-color: darken($color-primary, $amount: 20);
+    }
+    &:focus {
+      outline: none;
+    }
+    &--icon {
+      width: .9rem;
+    }
+    &--text {
+      font-weight: 700;
+      letter-spacing: .5px;
+      font-size: .9rem;
+    }
+  }
+}
