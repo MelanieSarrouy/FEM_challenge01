@@ -8,8 +8,8 @@
     align-items: center;
   }
   &__container {
-    max-width: 34.5rem;
     @include respond-to(medium) {
+      width: 36rem;
       display: flex;
       flex-wrap: nowrap;
     }
@@ -19,7 +19,7 @@
   background-color: $color-neutral;
   border-radius: .75rem .75rem 0 0;
   @include respond-to(medium) {
-    width: 50%;
+    max-width: 18rem;
     border-radius: .75rem 0 0 .75rem;
   }
   &__img {
@@ -38,7 +38,7 @@
   color: $color-font-light;
   padding: 1.4rem;
   @include respond-to(medium) {
-    width: 50%;
+    width: 14rem;
     padding: 2rem;
     border-radius: 0 .75rem .75rem 0;
   }
