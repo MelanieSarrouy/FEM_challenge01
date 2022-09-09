@@ -8,9 +8,7 @@
     align-items: center;
   }
   &__container {
-    border-radius: 12px;
-    overflow: hidden;
-    max-width: 550px;
+    max-width: 34.5rem;
     @include respond-to(medium) {
       display: flex;
       flex-wrap: nowrap;
@@ -19,15 +17,22 @@
 }
 .imgContainer {
   background-color: $color-neutral;
-  &__img {
-    height: 100%;
-  }
+  border-radius: .75rem .75rem 0 0;
   @include respond-to(medium) {
     width: 50%;
+    border-radius: .75rem 0 0 .75rem;
+  }
+  &__img {
+    height: 100%;
+    border-radius: .75rem .75rem 0 0;
+    @include respond-to(medium) {
+      border-radius: .75rem 0 0 .75rem;
+    }
   }
 }
 .section {
   background-color: $color-neutral;
+  border-radius: 0 0 .75rem .75rem;
   display: flex;
   flex-direction: column;
   color: $color-font-light;
@@ -35,6 +40,7 @@
   @include respond-to(medium) {
     width: 50%;
     padding: 2rem;
+    border-radius: 0 .75rem .75rem 0;
   }
   &__type {
     text-transform: uppercase;
@@ -81,7 +87,7 @@
     border: none;
     background-color: $color-primary;
     color: $color-neutral;
-    border-radius: 9px;
+    border-radius: .6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +105,6 @@
     }
     &--text {
       font-weight: 700;
-      letter-spacing: .5px;
       font-size: .9rem;
     }
   }

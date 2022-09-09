@@ -1,11 +1,11 @@
 <p>
   <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmelaniesarrouy.github.io%2FFEM_challenge01%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr" target="_blank">
-    <img style="border:0;width:88px;height:31px"
+    <img style="border:0;width:5.5rem;"
          src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
          alt="CSS Valid !" />
   </a>
   <a href="https://validator.w3.org/nu/?useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fmelaniesarrouy.github.io%2FFEM_challenge01%2F" target="_blank">
-    <img style="border:0;width:88px;height:31px"
+    <img style="border:0;width:5.5rem;"
          src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"
          alt="HTML Valid !" />
   </a>
